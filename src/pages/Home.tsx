@@ -11,7 +11,7 @@ import {
 import React, { useEffect } from "react";
 
 import useFirebaseUpload from "../hooks/useFirebaseUpload";
-import { CameraResultType, Capacitor } from "@capacitor/core";
+import { CameraResultType } from "@capacitor/core";
 import { useCamera, availableFeatures } from "@ionic/react-hooks/camera";
 import {
   MediaFile,
@@ -19,7 +19,6 @@ import {
   VideoCapturePlus,
 } from "@ionic-native/video-capture-plus";
 
-import { File, DirectoryEntry } from "@ionic-native/file";
 
 const Home: React.FC = () => {
   // setting up the hook to upload file and track its progress
