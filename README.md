@@ -1,10 +1,9 @@
-# simple-file-upload-hook
+# How to Record Videos in ReactJS with Capacitor and Cordova Plugins
 Sample application for ionic react js custom hook for file upload to firebase storage
 - See Firebase Hooks Series On dev.to 
-- Ionic Framework App using React Firebase Hooks - File Upload Hook - DEV Community 👩‍💻👨‍💻 https://buff.ly/2OVqB23
+- See Blog Post Here - DEV Community 👩‍💻👨‍💻 https://dev.to/aaronksaunders/how-to-record-videos-in-reactjs-with-capacitor-and-cordova-plugins-276g
 
-## Branches
-- See branch with Ionic/Capacitor and hook utilizing Camera from Ionic : [ with-camera-hook](https://github.com/aaronksaunders/simple-file-upload-hook/tree/with-camera-hook)
+
 
 ## Video Series
 - Subscribe to my youtube channel for updated videos around react and ionic framework
