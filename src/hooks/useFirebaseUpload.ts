@@ -55,13 +55,23 @@ function FirebaseFileUploadApi(): [
      * @param _value
      */
     const setUp = (_value: UploadSource): firebase.storage.UploadTask => {
-      if (_value instanceof File) {
-        let fName = `${new Date().getTime()}-${_value.name}`;
+      if (_value instanceof File || _value instanceof Blob) {
+        console.log("processing as File");
+        let fName = `${new Date().getTime()}`;
+
+        if (_value instanceof Blob) {
+          if (_value.type.split("/")[1] === "quicktime") {
+            fName = fName + ".mov";
+          } else {
+            fName = fName + "." + _value.type.split("/")[1];
+          }
+        }
+
         // setting the firebase properties for the file upload
         let ref = storageRef.child("images/" + fName);
         return ref.put(_value);
       } else {
-        console.log("processing as DataAsDataUrl")
+        console.log("processing as DataAsDataUrl");
         let v = _value as DataAsDataUrl;
         let fName = `${new Date().getTime()}.${v.format}`;
         // setting the firebase properties for the file upload
