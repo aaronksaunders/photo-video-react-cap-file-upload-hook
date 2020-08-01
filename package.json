@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "2.0.1",
-    "@capacitor/core": "^2.0.1",
-    "@capacitor/ios": "^2.0.1",
+    "@capacitor/android": "^2.4.0",
+    "@capacitor/core": "^2.4.0",
+    "@capacitor/ios": "^2.4.0",
     "@ionic-native/core": "^5.24.0",
     "@ionic-native/file": "^5.24.0",
     "@ionic-native/video-capture-plus": "^5.24.0",
