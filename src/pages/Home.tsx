@@ -63,29 +63,9 @@ const Home: React.FC = () => {
         });
         setFileData(imgBlob);
       },
-      (error:any) => console.log(error)
+      (error: any) => console.log(error)
     );
   };
-
-  // File.getFile( (await File.resolveDirectoryUrl(File.tempDirectory)),media.name, {})
-  //   .then((fileEntry: any) => {
-  //     let { name, nativeURL } = fileEntry;
-  //     // get the path..
-  //     let path = nativeURL.substring(0, nativeURL.lastIndexOf("/"));
-  //     // we are provided the name, so now read the file into a buffer
-  //     return File.readAsArrayBuffer(path, name);
-  //   })
-  //   .then(
-  //     (buffer: any) => {
-  //       // get the buffer and make a blob to be saved
-  //       let imgBlob = new Blob([buffer], {
-  //         type: "video/mov",
-  //       });
-  //       setFileData(imgBlob);
-  //     },
-  //     (error) => console.log(error)
-  //   );
-  //};
 
   // when the photo state changes, then call setFileData to upload
   // the image using firebase-hook
