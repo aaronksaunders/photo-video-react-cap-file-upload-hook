@@ -25,7 +25,7 @@
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-file": "^6.0.2",
     "cordova-plugin-video-capture-plus": "^1.0.0",
-    "firebase": "^7.14.1",
+    "firebase": "^10.9.0",
     "ionicons": "^5.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
